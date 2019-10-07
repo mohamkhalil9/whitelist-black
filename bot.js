@@ -27,7 +27,7 @@ client.on('message', message => { // اقتراح
 });
 
 client.on("message", message => { // تقديم اداره
-  if(message.content.startsWith("$apply")) {
+  if(message.content.startsWith("!apply")) {
         if(!message.channel.guild) return;
                 if(message.author.bot) return;
         let channel = message.guild.channels.find("name", "🚫apply-to-whitelist🚫")
